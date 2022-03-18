@@ -85,7 +85,7 @@ export const getChartOptions = (title = '', seriesName = '', data = []) => {
     series: [
       {
         type: 'pie',
-        innerSize: '60%',
+        innerSize: '55%',
         name: `${seriesName}`,
         data,
         states: {
