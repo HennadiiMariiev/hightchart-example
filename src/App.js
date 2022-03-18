@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { mocked_data, chartTitle } from './components/PieChart/mocked_data/mocked_data';
+import { Pie } from './components/PieChart';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Pie data={mocked_data} title={chartTitle} />
     </div>
   );
 }
